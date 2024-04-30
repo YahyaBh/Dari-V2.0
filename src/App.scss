@@ -1,5 +1,147 @@
-header {
-  
+#header {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(245, 246, 252, 0.08)),
+    url(../public/Images/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-origin: padding-box;
+  position: relative;
+  box-sizing: border-box;
+
+  header {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px 10px;
+      box-sizing: border-box;
+
+      .sections {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
+
+      ul {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+
+        li {
+          color: #fff;
+        }
+
+        img {
+          width: 90px;
+        }
+      }
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        h2 {
+          font-size: 45px;
+          color: #fff;
+          text-align: justify;
+          word-spacing: 20px;
+
+          span {
+            color: #eaa953;
+          }
+        }
+
+        p {
+          text-align: center;
+          color: #fff;
+          font: 20px;
+        }
+      }
+
+      .images-couscous {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .gen-c {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          position: relative;
+
+          .right-a,
+          .left-a {
+            margin: 20px;
+          }
+
+          .couscours-mid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              position: absolute;
+            }
+
+            .left-c {
+              rotate: -23deg;
+              left: 137px;
+              bottom: 55px;
+              width: 408px;
+            }
+
+            .right-c {
+              rotate: 23deg;
+              right: 137px;
+              bottom: 55px;
+              width: 408px;
+            }
+          }
+
+          img {
+            width: 450px;
+          }
+        }
+      }
+    }
+  }
+  .Orna {
+    width: 100%;
+    bottom: -22px;
+    position: absolute;
+  }
+}
+
+.gen-container {
+  background-image: url(../public/Images/background2.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: contain;
+  background-origin: padding-box;
   width: 100%;
   position: relative;
 
@@ -9,142 +151,78 @@ header {
   flex-direction: column;
   gap: 20px;
 
-  nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 10px;
-    box-sizing: border-box;
-
-    .sections {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
-    }
-
-    ul {
-      width: 80%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      list-style: none;
-
-      li {
-        color: #fff;
-      }
-
-      img {
-        width: 90px;
-      }
-    }
-  }
-
   section {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    height: 100%;
 
     .top {
       display: flex;
+      justify-content: space-around;
       align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 20px;
-      h2 {
-        font-size: 45px;
+      flex-direction: row;
+
+      img {
+        width: 300px;
+      }
+
+      h3 {
+        font-size: 40px;
         color: #fff;
-        text-align: justify;
-        word-spacing: 20px;
+        text-align: center;
 
         span {
           color: #eaa953;
         }
       }
-
-      p {
-        text-align: center;
-        color: #fff;
-        font: 20px;
-      }
     }
 
-    .images-couscous {
+    .center {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
+      flex-direction: column;
+      width: 100%;
 
-      .gen-c {
+      .cards {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        position: relative;
+        flex-wrap: wrap;
+        width: 75%;
+        gap: 10px;
 
-        .right-a,
-        .left-a {
-          margin: 20px;
-        }
-
-        .couscours-mid {
+        .card {
           display: flex;
-          justify-content: center;
+          flex-direction: column;
           align-items: center;
+          justify-content: center;
+          flex-basis: 30%;
+          gap: 10px;
+
+          h3 {
+            font-size: 25px;
+            color: #fff;
+            text-align: center;
+          }
+
+          p {
+            font-size: 12px;
+            color: #fff;
+            text-align: center;
+          }
+
+          button {
+            color: #002E5F;
+            background-color: #fff;
+            width: 100%;
+          }
 
           img {
-            position: absolute;
-          }
-
-          .left-c {
-            rotate: -23deg;
-            left: 137px;
-            bottom: 55px;
-            width: 408px;
-          }
-
-          .right-c {
-            rotate: 23deg;
-            right: 137px;
-            bottom: 55px;
-            width: 408px;
+            width: 150px;
           }
         }
-
-        img {
-          width: 450px;
-        }
-      }
-    }
-  }
-
-  .Orna {
-    width: 100%;
-  }
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-
-  .top {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-
-    img {
-      width: 300px;
-    }
-
-    h3 {
-      font-size: 40px;
-      color: #fff;
-      text-align: center;
-
-      span {
-        color: #eaa953;
       }
     }
   }
