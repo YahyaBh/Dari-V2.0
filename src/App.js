@@ -254,14 +254,16 @@ function App() {
             <img src={Choumicha} alt="choumicha" />
           </div>
 
-          <div className='right'>
+          <div className='middle'>
 
             <img src={SBL1} alt="SBL1" />
-            <img src={SBL1} alt="SBL2" className='SBL2' />
             <h2>Original recipes <br /> by <span>Choumicha</span></h2>
             <p>Choumicha Chaf' née en 1972 à Had Kourt, au Maroc, est une productrice-animatrice marocaine d’émissions culinaires sur la chaîne 2M ainsi que sur sa propre chaîne YouTube, et propriétaire d’un restaurant</p>
             <button>Show More <MdArrowOutward /></button>
+          </div>
 
+          <div className='right'>
+            <img src={SBL1} alt="SBL2" className='SBL2' />
           </div>
         </div>
 
@@ -331,7 +333,7 @@ function App() {
           </div>
 
           <div className='section'>
-          <h4>ABOUT US</h4>
+            <h4>ABOUT US</h4>
             <ul>
               <li>HOME</li>
               <li>PRODUCTS</li>
@@ -341,7 +343,7 @@ function App() {
           </div>
 
           <div className='section'>
-          <h4>ABOUT US</h4>
+            <h4>ABOUT US</h4>
             <ul>
               <li>HOME</li>
               <li>PRODUCTS</li>
